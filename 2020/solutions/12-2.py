@@ -1,6 +1,7 @@
 def part1():
     ans = 0 
-    for l in open("12-2-input","r").read().splitlines():
+    _file = open("inputs/12-2-input","r")
+    for l in _file.read().splitlines():
         line = l.split(" ")
         tmp = line[0].split("-")
         _min = int(tmp[0])
@@ -14,11 +15,13 @@ def part1():
         if _min <= count <= _max:
             ans += 1
         print()
+    _file.close()
     return ans
 
 def part2():
     ans = 0
-    for l in open("12-2-input","r").read().splitlines():
+    _file = open("inputs/12-2-input","r")
+    for l in _file.read().splitlines():
         line = l.split(" ")
         tmp = line[0].split("-")
         left = line[2][int(tmp[0])-1]
@@ -31,6 +34,7 @@ def part2():
         if left == char or right == char:
             if left != right:
                 ans += 1
+    _file.close()
     return ans
 
 print(part1())

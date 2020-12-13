@@ -5,7 +5,8 @@ def problem1():
     return ans
 
 def reader():
-    f = open("12-4-input").read().splitlines()     
+    _f = open("inputs/12-4-input")
+    f = _f.read().splitlines()     
     l = 0
     _file = []
     line = f[l].split(" ")
@@ -20,6 +21,7 @@ def reader():
                 line.append(el)
         l += 1
     _file.append(line)
+    _f.close()
     return _file
 
 def isValid(line):

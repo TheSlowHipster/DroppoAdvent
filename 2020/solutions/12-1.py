@@ -1,7 +1,7 @@
 import numpy as np
 
 def part1():
-    inp = np.loadtxt("12-1-input")
+    inp = np.loadtxt("inputs/12-1-input")
     ans = np.array([])
     out = np.array([])
     for x in range(len(inp)-1):
@@ -18,7 +18,7 @@ def part1():
     return out
 
 def part2():
-    inp = np.loadtxt("12-1-input")
+    inp = np.loadtxt("inputs/12-1-input")
     ans = np.array([])
     out = np.array([])
     for x in range(len(inp)-2):
